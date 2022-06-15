@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  height: 100%;
+  background-image: linear-gradient(rgb(147, 66, 245), rgb(123, 15, 255));
+  font-family: "Chakra Petch", sans-serif;
+}
+
+#root > h1 {
+  text-align: center;
+  padding: 15vh 0 0 0;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10rem 5rem 0 5rem;
+}
+
+.world {
+  background: rgb(233, 125, 250);
+  min-width: 300px;
+  width: 21%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+.world h1 {
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.world p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(241, 153, 255);
+  align-items: center;
+  margin-bottom: 0.7rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.row:hover {
+  background: rgb(240, 143, 255);
+}
+
+@media (max-width: 600px) {
+  #root > h1 {
+    margin: 0 3rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  #container {
+    margin-top: 0vh;
+  }
+}
